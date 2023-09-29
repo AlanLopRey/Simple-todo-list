@@ -32,7 +32,9 @@ function todoMaker() {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  todoMaker();
+  if (input.value !== "") {
+    todoMaker();
+  }
 });
 
 todos.addEventListener("click", (e) => {
